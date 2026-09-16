@@ -71,8 +71,7 @@ public class SmartHomeView {
         System.out.println(msg);
     }
 
-    // ===== Aksi menu =====
-    private void tambahDevice() {
+ private void tambahDevice() {
         showDeviceTypeMenu();
         int jenis = askInt("Jenis: ");
 
@@ -114,7 +113,6 @@ public class SmartHomeView {
             return;
         }
 
-        // View menerima List<String> dari Controller, bukan List<SmartDevice>
         List<String> details = controller.getAllDeviceDetails();
         for (int i = 0; i < details.size(); i++) {
             System.out.println((i + 1) + ". " + details.get(i));
