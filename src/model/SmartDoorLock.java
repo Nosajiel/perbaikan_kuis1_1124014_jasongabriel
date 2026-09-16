@@ -10,8 +10,13 @@ public class SmartDoorLock extends SmartDevice implements Lockable {
         this.locked = false;
     }
 
-    public String getPin() { return pin; }
-    public boolean isLocked() { return locked; }
+    public String getPin() {
+        return pin;
+    }
+
+    public boolean isLocked() {
+        return locked;
+    }
 
     @Override
     public void lock() {

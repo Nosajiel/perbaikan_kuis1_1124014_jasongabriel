@@ -10,8 +10,13 @@ public class SmartSpeaker extends SmartDevice implements Connectable, Switchable
         this.connection = ConnectionType.NONE;
     }
 
-    public int getVolume() { return volume; }
-    public ConnectionType getConnection() { return connection; }
+    public int getVolume() {
+        return volume;
+    }
+
+    public ConnectionType getConnection() {
+        return connection;
+    }
 
     @Override
     public void turnOn() {

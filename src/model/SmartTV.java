@@ -12,9 +12,17 @@ public class SmartTV extends SmartDevice implements Switchable, Connectable {
         this.connection = ConnectionType.NONE;
     }
 
-    public int getChannel() { return channel; }
-    public int getVolume() { return volume; }
-    public ConnectionType getConnection() { return connection; }
+    public int getChannel() {
+        return channel;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public ConnectionType getConnection() {
+        return connection;
+    }
 
     @Override
     public void turnOn() {
